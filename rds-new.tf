@@ -1,6 +1,6 @@
   ## create a database instance 
-resource "aws_db_instance" "aptrac-prod-db" {
-  identifier             = "aptrac-prod-db"
+resource "aws_db_instance" "abkhan-prod-db" {
+  identifier             = "abkhan-prod-db"
   instance_class         = "db.m5.xlarge"
   allocated_storage      = 10
   max_allocated_storage =  100
@@ -23,8 +23,8 @@ resource "aws_db_instance" "aptrac-prod-db" {
 }
 
 ## parameter group
-resource "aws_db_parameter_group" "aptrac-prod-db" {
-  name   = "aptrac-prod-db"
+resource "aws_db_parameter_group" "abkhan-prod-db" {
+  name   = "abkhan-prod-db"
   family = "postgres11"
 
   parameter {
